@@ -1,5 +1,5 @@
 # Event bubbling and Event capturing
-<br>
+
 ```bash
 
 <!DOCTYPE html>
@@ -48,7 +48,7 @@
 ```
 
 # Event Delegation in JavaScript :
-<br><br>
+
 Event Delegation is a technique where you attach a single event listener to a parent element instead of multiple listeners to child elements.
 <br><br>
 Why Use Event Delegation?
@@ -230,6 +230,231 @@ setTimeout(() => {
 
 ```
 
+# Promise
+
+A Promise is an object that represents the eventual completion or failure of an asynchronous operation.
+<br><br>
+It has three states:
+<br><br>
+pending :- the initial state, neither fulfilled nor rejected.
+
+fulfilled :- the operation completed successfully.
+
+rejected :- the operation failed.
+
+# why use Promise:
+
+Promise use in JavaScript because before the developers use callback function ,which often led to callback hell.So,Promise used for the solution of callback hell.
+
+<br>
+
+Syntax:
+
+```bash
+
+let promise = new Promise(function(resolve, reject) {
+  // asynchronous operation
+  if (/* success condition */) {
+    resolve("Success result");
+  } else {
+    reject("Error reason");
+  }
+});
+
+```
+Example:
+
+```bash
+
+
+const p = new Promise( (resolve,reject)=>{
+
+resolve('promise  resolved')  
+
+reject('promise rejected')
+
+//Note :- If resolve and reject method is call one after other in this condition the method which is called first will be executed.
+
+})
+
+p.then((data)=>{
+    console.log("it runs when promise full filled");  // It runs when promise resolved
+})
+.catch(()=>{
+    console.log("it run when promise rejected"); //It runs when  promise is rejected
+}).then(()=>{
+    console.log("Even when the promise is rejected this will execute.It also executes when promise s fullfilled");
+}).finally(()=>{
+    console.log('It always executes');
+})
+
+```
+
+# fetch API:
+
+The Fetch API in JavaScript is used to make HTTP requests (like GET, POST, PUT, DELETE,PATCH) to servers. Its built into modern browsers and provides a cleaner and more powerful way to fetch resources than the older XMLHttpRequest.
+<br>
+Note: fetch returns a Promise.
+<br><br>
+
+Syntax:- 
+
+```bash
+
+fetch(url, options)
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error("Error:", error));
+
+  ```
+
+  Example:- Using GET request  
+
+  ```bash
+
+  fetch('https://dummyjson.com/products')
+
+.then(res => res.json()) //It convert response to json
+.then(data => console.log(data)) //it print the data that receive from server
+
+.catch(error => console.log('errorrr')) //It runs when api not working or not send data
+
+
+```
+
+Example :- Using POST request
+
+```bash
+
+fetch('https://dummyjson.com/products/add', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({
+    title: 'BMW Pencil',
+    /* other product data */
+  })
+})
+.then(res => res.json())
+.then(console.log);
+
+```
+
+ # async / await in JavaScript 
+
+The async / await syntax is a modern way to handle Promises in JavaScript. It makes asynchronous code look and behave more like synchronous code, improving readability and maintainability.
+
+# What is async?
+
+The async keyword is used to declare a function that always returns a Promise.
+
+Example:
+
+```bash
+
+async function greet() {
+  return "Hello!";
+}
+
+greet().then(msg => console.log(msg)); // Output: Hello!
+
+```
+
+# What is await?
+
+await pauses the execution inside an async function until the Promise is resolved or rejected.
+
+Example:
+
+```bash
+
+async function fetchData() {
+  let response = await fetch('https://jsonplaceholder.typicode.com/posts/1');
+  let data = await response.json();
+  console.log(data);
+}
+
+```
+
+# optional chaining (?.):
+
+Optional Chaining is a safe way to access deeply nested object properties without causing errors if a property is undefined or null.
+
+<br>
+
+Syntax:
+
+```bash
+
+object?.property
+object?.[expression]
+object?.method?.()
+
+```
+
+ Problem It Solves:
+<br>
+Without optional chaining:
+
+```bash
+
+let user = {};
+console.log(user.address.city); //  Error: Cannot read property 'city' of undefined
+
+```
+
+With optional chaining:
+
+```bash
+
+console.log(user.address?.city); //  Output: undefined (no error!)
+
+```
+
+Example: Nested Object
+
+```bash
+
+let user = {
+  name: "Nitish",
+  address: {
+    city: "Delhi"
+  }
+};
+
+console.log(user.address?.city);       //  Delhi
+console.log(user.address?.pincode);    //  undefined (no error)
+console.log(user.contact?.phone);      //  undefined (no error)
+
+```
+
+# ES6  Modules(ECMAScript 2015):
+
+ES6 Modules allow JavaScript to support modular programming — breaking code into separate files and importing/exporting them as needed.
+<br>
+
+# Rules to Remember :
+
+1.Use type="module" in HTML(it use in script tag) to use import/export in browser.
+<br><br>
+2.In Node.js, use .mjs extension or set "type": "module" in package.json.
+<br><br>
+3.You cannot use import/export inside functions or conditionals.
+<br><br>
+4.import is hoisted and runs before the rest of the code.
+<br><br>
+5.Modules are singletons - if you import the same module multiple times, it’s only evaluated once.
+<br><br>
+
+#  Importing
+
+  Types of Importing:
+
+  1.Importing Named Exports
+  <br><br>
+  When you export variables, functions, or classes using their names, you can import them using curly braces {}.
+   <br>
+
+  
 
 
 
