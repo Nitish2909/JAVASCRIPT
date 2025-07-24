@@ -713,9 +713,9 @@ const student = new Object()
 
 Object.seal(person);
 
-person.age = 23;         // ✅ Allowed
-person.city = "Delhi";   // ❌ Not added
-delete person.name;      // ❌ Not deleted
+person.age = 23;         //  Allowed
+person.city = "Delhi";   //  Not added
+delete person.name;      //  Not deleted
 
 console.log(person); // output : { name: 'Nitish', age: 23 }
 
@@ -736,9 +736,9 @@ let user = {
 
 Object.freeze(user);
 
-user.name = "Ravi";     // ❌ Not changed
-user.city = "Delhi";    // ❌ Not added
-delete user.role;       // ❌ Not deleted
+user.name = "Ravi";     //  Not changed
+user.city = "Delhi";    //  Not added
+delete user.role;       //  Not deleted
 
 console.log(user); // { name: 'Aman', role: 'Admin' }
 
@@ -1146,9 +1146,9 @@ setTimeout(function() {
    ```
 
  #  <b>apply() method:</b>
-      <br>
+      
       apply() is a method that allows you to call a function with a specific this value and arguments passed as an array.
-      <br>
+    
 
       Example :
 
