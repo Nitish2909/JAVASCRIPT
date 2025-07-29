@@ -1611,6 +1611,120 @@ console.log(multi);
 
 ```
 
+# defer attribute in script tag :
+
+The defer attribute tells the browser to download the script in parallel, but execute it only after the HTML is fully parsed .
+
+# spread operator(...) :
+ spread operators works with array,object and function.
+ <br>
+ It Introduced in ES6, it’s commonly used for copying, merging, and passing values.
+ <br><br>
+<b> 1.Spread(...) in Arrays :</b>    
+
+```bash
+
+// //copying an array
+// const arr1 =[1,2,3,4,5]
+
+// const arr2=[...arr1]
+
+// console.log(arr1);
+
+// //merging an array
+// const arr1 =[1,2,3,4,5]
+
+// const arr2=[6,7,8,9,10]
+
+// const arr3=[...arr1 ,...arr2]
+
+// console.log(arr3);
+
+// //Expanding an element
+
+// const arr1=[1,2,3,4]
+
+// console.log(...arr1);
+
+```
+<b>2.Spread in Objects</b>
+
+```bash
+
+// // copying an object
+
+// let user = {
+//   name: "Nitish",
+//   greet: function() {
+//     return ` Hello, ${this.name}`
+//   }
+// };
+
+// let user2={ ...user}
+
+// console.log(user2.greet());
+
+// //merging an object
+// let user = {
+//   firstName: "Nitish",
+//   lastName:"kumar",
+//     age:21
+// };
+// let user2={ 
+//     rollno:36,
+//     course:"BCA"
+    
+// };
+// const user3={...user, ...user2 };
+// console.log(user3);
+
+```
+
+<b>3. Spread in Function Arguments</b>
+
+```bash
+
+function sum(a, b, c) {
+  return a + b + c;
+}
+
+const nums = [1, 2, 3];
+console.log(sum(...nums)); // 6
+
+```
+
+# Arrow Functions in JavaScript :
+
+Arrow functions were introduced in ES6 (ECMAScript 2015) and provide a shorter syntax for writing function expressions.
+<br>
+arrow functions are used to perform small task. like add, multiply etc.
+<br>
+Note:- 
+<br>
+arrow function cannot be called above where at which is defined (means if arrow function defined at 12th line then it cannot called before 12th line i.e. on 4th line it cannot be called.) while function defined with 'function' keyword can be called anywhere.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
