@@ -1398,7 +1398,7 @@ function sayBye() {
   console.log("Bye!");
 }
 
-greet("Nitish", sayBye);
+greet("Nitish", sayBye); //sayBye is a callback
 
 
 //example with anonymous:
@@ -1419,7 +1419,12 @@ greet("nitish",function saybyee()
 # Higher order function:
 <br>
 Functions that operate on other functions — either by receiving them as arguments or by returning them — are called higher-order functions.
-
+<br>
+A higher-order function is a function that does at least one of the following:
+<br>
+Takes one or more functions as arguments
+<br>
+Returns a function as its result
 <br>
 
 # <b>for of loop and for in loop</b>
