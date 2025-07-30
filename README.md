@@ -1426,6 +1426,39 @@ Takes one or more functions as arguments
 <br>
 Returns a function as its result
 <br>
+Example:
+
+```bash
+// Custom higher-order function that returns a new function
+
+function greet(message) {
+  return function(name) {
+    console.log(`${message}, ${name}!`);
+  };
+}
+
+const sayHello = greet("Hello");
+sayHello("Nitish"); // Output: Hello, Nitish!
+
+
+//setTimeout- is also a higher order function
+
+setTimeout(() => {
+  console.log("Executed after 1 second");
+}, 1000);
+
+//using map()
+
+const numbers = [1, 2, 3, 4, 5];
+
+// map is a higher-order function — it takes a function as an argument
+const squared = numbers.map(function(num) {
+  return num * num;
+});
+
+console.log(squared); // [1, 4, 9, 16, 25]
+
+```
 
 # <b>for of loop and for in loop</b>
 
