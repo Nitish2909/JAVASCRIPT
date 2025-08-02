@@ -795,6 +795,7 @@ console.log(info.fullname);
 ```
 
 # Destructring :
+Destructuring is a convenient way to extract values from arrays or objects and assign them to variables.
 
 ```bash
 
