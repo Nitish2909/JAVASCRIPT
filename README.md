@@ -1742,6 +1742,83 @@ Note:-
 arrow function cannot be called above where at which is defined (means if arrow function defined at 12th line then it cannot called before 12th line i.e. on 4th line it cannot be called.) while function defined with 'function' keyword can be called anywhere.
 
 
+# Types of Error in javascrict:
+
+In JavaScript, errors can occur due to various reasons like syntax mistakes, logical flaws, or runtime issues. These errors are categorized into different types to help developers debug effectively.
+<br>
+<b>1.Syntax Error</b>
+<br>
+Occurs when the JavaScript parser encounters code that breaks the language rules.
+
+Example:
+
+ ```bash
+ if (true {
+  console.log("Missing parenthesis");
+}
+```
+This Example show an error like this: <b> SyntaxError: Unexpected token '{'</b>
+
+<b> 2. Reference Error</b>
+<br>
+Happens when trying to access a variable that hasn't been declared.
+<br>
+Example:
+
+```bash
+console.log(a);
+
+//Error :
+ReferenceError: a is not defined
+
+```
+<b>3. Type Error</b>
+<br>
+Occurs when a value is not of the expected type (e.g., calling a non-function or accessing properties of undefined).
+
+Example:
+
+```bash
+let num = 5;
+num.toUpperCase();
+
+//Error: TypeError: num.toUpperCase is not a function
+
+```
+<b>4. Range Error</b>
+
+Happens when a value is not in the set or range of allowed values.
+
+Example:
+
+```bash
+
+let arr = new Array(-1);
+
+//RangeError: Invalid array length
+
+```
+
+# 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
