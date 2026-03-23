@@ -1,3 +1,9 @@
+# What is JavaScript:
+JavaScript is a scripting language that is used to create dynamic and interactive web pages. It is a high-level, interpreted, and object-oriented programming language used to make web pages interactive and dynamic.It is mainly used in web development to control the behavior of websites.
+<br>
+In Simple word we can say that JavaScript is one of the most important programming languages for web development. It helps in creating interactive, responsive, and user-friendly websites.
+
+
 # History of javascript:
 
 The founder of Netscape "Mark Andreessen" decide to develope a programming language for his Netscape.
