@@ -131,6 +131,8 @@ JavaScript is single-threaded, meaning it executes one command at a time in a si
 4.Event Loop
 <br><br>
 
+http://latentflip.com/loupe     -> this site used to check how event loop works
+
 Example:
 
 ```bash
