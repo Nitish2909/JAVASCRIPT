@@ -432,8 +432,132 @@ console.log(Math.pow(3,3));
 
 ```
 
-# LOGICAL OPERATORS
+# Operator in JavaScript:
+In JavaScript, Operators are used to perform operations on Operands like ( values and variables).
+<br>
+Operators: Special symbols like -, + , * , /, etc.
+<br>
+Operands: Value on which the operator is applied.
+<br><br>
 
+<b>Types of JavaScript Operators:</b>
+<br>
+There are mainly 6 types:
+<br>
+
+<b>1.Arithmetic Operators:</b>
+<br>
+Arithmetic operators are used to perform mathematical operations on numeric values.
+
+```bash
+Operator     	Meaning       	    Example	
+
++	          Addition	           5 + 2 = 7	
+
+-	         Subtraction    	     5 - 2 = 3	
+
+*	        Multiplication   	     5 * 2 = 10	
+ 
+/  	      Division               10 / 2 = 5
+  
+%	         Modulus	             5 % 2 = 1
+
+**     	Exponentiation      	   2 ** 3 = 8	
+
+
+```
+
+Example:
+
+```bash
+
+let a = 10, b = 3;
+
+console.log(a + b); // 13
+console.log(a % b); // 1
+
+```
+
+<b>2.Assignment Operators :</b>
+<br>
+Assignment operators are used to assign values to a variable.
+
+```bash
+
+Operator	      Example	   Meaning
+
+ =	             x = 5	   Assign
+
++=	            x += 3	   x = x + 3
+
+-=	            x -= 2	   x = x - 2
+
+*=	            x *= 2	   x = x * 2
+
+/=	            x /= 2      x = x / 2
+
+
+```
+
+Example:
+
+```bash
+let x = 5;
+x += 3;
+
+console.log(x); // 8
+
+```
+
+<b>3. Comparison Operators / Relation operator :</b>
+<br>
+Comparison operators are used to compare two values and return a Boolean values.
+
+```bash
+
+
+Operator         	Meaning      	                           Example
+
+   ==	            Equal to	                                5 == 5
+
+   ===           Strict equal (value + type)               7 === 7
+
+   !=	            Not equal	                                5 != 3
+
+   !==           Strict Not equal	                         
+
+   >	            Greater than	                            5 > 3
+
+   <	            Less than	                                5 < 3
+
+   >=	            Greater or equal	                        5 >= 5
+
+   <=	            Less or equal	                            5 <= 3
+```
+
+Example:
+
+```bash
+console.log(5 == "5");   // true
+console.log(5 === "5");  // false
+
+```
+
+
+<b> 4. Conditional (Ternary) Operator:</b>
+<br>
+JavaScript also contains a conditional operator that assigns a value to a variable based on some condition.
+<br>
+Syntax:
+<br>
+variablename = (condition) ? value1(true):value2(false) 
+<br>
+Example
+<br>
+let voteable = (age < 18) ? "Too young":"Old enough";
+
+<b>5. LOGICAL OPERATORS:</b>
+<br>
 Logical operators are used to determine the logic between variables or values.
 <br>
 Given that x = 6 and y = 3, the table below explains the logical operators:
@@ -448,19 +572,18 @@ if one codition is satisfied it gives true otherwise false
 <br>
 !	  (not)	!(x == y) is true	
 <br>
-<br>
 
-# Conditional (Ternary) Operator:
-<br>
-JavaScript also contains a conditional operator that assigns a value to a variable based on some condition.
-<br>
-Syntax:
-<br>
-variablename = (condition) ? value1(true):value2(false) 
-<br>
-Example
-<br>
-let voteable = (age < 18) ? "Too young":"Old enough";
+<b>6. Increment & Decrement Operators:</b>
+
+```bash
+
+ Operator        Meaning       
+
+ ++           Increase by 1 
+
+ --           Decrease by 1 
+
+ ```
 
 # DECISION MAKING (CONDITIONAL)STATEMENTS
 
